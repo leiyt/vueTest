@@ -12,11 +12,11 @@ module.exports = {
     proxyTable: {
       // '/scp-': {
       //   target: 'http://192.168.0.242:30940/', // 开发机
-      //   // target: 'http://172.16.10.116:8083', //王云
+      //   // target: 'http://172.16.10.116:8083', 
       //   changeOrigin: true
       // },
       '/scp-eventapp': {
-        // target: 'http://172.16.10.63:9065',   // 梁武卿
+        // target: 'http://172.16.10.63:9065',   
         target: 'http://192.168.0.242:30081/', // 测试环境
         // target: 'http://192.168.0.161:30940', // (线上242用户管理)
         changeOrigin: true
@@ -32,99 +32,24 @@ module.exports = {
         // target: 'http://192.168.0.242:30081/',    // 测试环境
         changeOrigin: true
       },
-      '/scp-patrolapp': {
-        target: 'http://192.168.0.242:30940',
-        // target: 'http://172.16.10.124:8083',
-        // target: 'http://172.16.10.121:8083/',
-        // target: 'http://172.16.10.127:8084', //全海飞
-        // target: 'http://172.16.10.90:8083', //王伟
-        // target: 'http://192.168.0.161:30940/', //公共
-        // target: 'http://172.16.10.1:8083',//李漫成
-        // target: 'http://172.16.10.80:8083/', //蒋路飞
-        // target: 'http://172.16.10.138:8082',
-        // target: 'http://172.16.10.138:8082',//潘尚砖
-        // target: 'http://172.16.10.116:8083', //王云
-        // target: 'http://172.16.10.149:8082',//叶果
-        // target: 'http://172.16.10.10:8083',//刘永
-        changeOrigin: true
-      },
-      '/demo2': {
-        target: 'http://192.168.0.242:30940/'
-      },
-      // dev: {
-      '/demo': {
-        // target: 'http://localhost:8088/',        //mock
-        // target: 'http://192.168.0.235:8040/',    // 服务器
-        // target: 'http://192.168.0.235:8082/', // 郭峰
-        target: 'http://192.168.0.21:8082/', // 王洪奔(框架Demo)
-        changeOrigin: true
-      },
-      '/scp-devicemgmtcomponent': {
-        target: 'http://192.168.0.242:30081/', // 王珂(设备管理)
-        changeOrigin: true
-      },
-      '/scp-usermgmtcomponent': {
-        target: 'http://192.168.0.242:30940', // (线上242用户管理)
-        // target: 'http://192.168.0.161:30940',  // (线上242用户管理)
-        changeOrigin: true
-      },
-      '/scp-iotbusconsoleapp': {
-        // 物联网总线（杨晓波）
-        // '/api': {
-        // target: 'http://172.16.10.55:8001/',   //iot组内测试环境
-        target: 'http://192.168.0.207:8001/', // 测试组207环境
-        changeOrigin: true
-      },
-      '/scp-visitorapp': {
-        target: 'http://172.16.10.75:9044/', // 植梅健(访客管理)
-        changeOrigin: true
-      },
-      // '/scp-mapapp/mapService': {
-      //  target: 'http://172.16.10.80:8082/', // 陈伟波(地图应用)
-      //  changeOrigin: true
-      // },
-      // '/scp-mapapp/mapapp': {
-      //   target: 'http://172.16.10.80:8082/', // 陈伟波(地图应用) wagger: http://192.168.0.236:9036/
-      //   changeOrigin: true
-      // },
-      // '/mapService': {
-      //   target: 'http://172.16.10.80:8082/', // 陈伟波(地图应用)
-      //   changeOrigin: true
-      // },
-      // '/mapapp': {
-      //   target: 'http://172.16.10.80:8082/', // 陈伟波(地图应用) wagger: http://192.168.0.236:9036/
-      //   changeOrigin: true
-      // },
-      '/scp-mapapp/mapService': {
-        target: 'http://192.168.0.242:30940/', // 陈伟波(地图应用)
-        changeOrigin: true
-      },
-      '/scp-mapapp/mapapp': {
-        target: 'http://192.168.0.242:30940/', // 陈伟波(地图应用) wagger: http://192.168.0.236:9036/
-        changeOrigin: true
-      },
-      '/mapService': {
-        target: 'http://192.168.0.242:39035/', // 陈伟波(地图应用)
-        changeOrigin: true
-      },
       '/mapapp': {
-        target: 'http://192.168.0.242:39035/', // 陈伟波(地图应用) wagger: http://192.168.0.236:9036/
+        target: 'http://192.168.0.242:39035/', // (地图应用) wagger: http://192.168.0.236:9036/
         changeOrigin: true
       },
       // '/scp-mdmcomponent': {
-      //   target: 'http://172.16.10.33:8182/', // 邓代超（主数据管理-人员管理）
+      //   target: 'http://172.16.10.33:8182/', // （主数据管理-人员管理）
       //   changeOrigin: true
       // },
       '/scp-mdmapp': {
         // target: 'http://192.168.0.242:30940/',
         // target: 'http://192.168.0.161:30940/',
-        target: 'http://172.16.10.77:8182/', // 樵江伟(主数据管理：房屋管理、组织管理)
+        target: 'http://172.16.10.77:8182/', // (主数据管理：房屋管理、组织管理)
         changeOrigin: true
       },
       '/scp-broadcastapp': {
-        target: 'http://192.168.0.242:30940/', // 蔡洽渠(个性化广播)
+        target: 'http://192.168.0.242:30940/', // (个性化广播)
         // target: 'http://172.16.10.28:8082/',
-        // target: 'http://192.168.0.161:30940/', // 服务器地址
+        // target: 'http://192.168.0.161:30940/', //
         changeOrigin: true
       },
       '/zuul/scp-broadcastapp': {
@@ -133,14 +58,6 @@ module.exports = {
         // target: 'http://172.16.10.28:8082/',
         changeOrigin: true
       },
-      '/scp-accesscontrolapp': {
-        target: 'http://localhost:8082/', // 汪熙
-        changeOrigin: true
-      },
-      // '/scp-accesscontrolapp': {
-      //   target: 'http://localhost:8082/',  // 汪熙
-      //   changeOrigin: true
-      // },
       '/scp-parkinglotapp': {
         target: 'http://localhost:8082/',
         changeOrigin: true
@@ -151,10 +68,6 @@ module.exports = {
       '/scp-videogatewayapp': {
         target: 'http://192.168.0.242:30081/', // 视频应用
         changeOrigin: true
-      },
-      '/scp-ismgcomponent': {
-        // target: 'http:// 172.16.10.12:8082/',  // 张勇(短信网关)
-        target: 'http://192.168.0.242:30081/' // 张勇(短信网关)
       },
       '/scp-videointercomapp': {
         target: 'http://192.168.0.161:39021/',
