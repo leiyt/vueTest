@@ -16,46 +16,11 @@ module.exports = {
       //   changeOrigin: true
       // },
       '/scp-eventapp': {
-        // target: 'http://172.16.10.63:9065',   
         target: 'http://192.168.0.242:30081/', // 测试环境
-        // target: 'http://192.168.0.161:30940', // (线上242用户管理)
-        changeOrigin: true
-      },
-      '/scp-informationreleaseapp': {
-        target: 'http://172.16.10.91:8082',
-        // target: 'http://192.168.0.242:30081/',
-        changeOrigin: true
-      },
-      '/scp-laddercontrolapp': {
-        // target: 'http://172.16.10.41:8082',
-        target: 'http://172.16.10.37:8082',
-        // target: 'http://192.168.0.242:30081/',    // 测试环境
         changeOrigin: true
       },
       '/mapapp': {
         target: 'http://192.168.0.242:39035/', // (地图应用) wagger: http://192.168.0.236:9036/
-        changeOrigin: true
-      },
-      // '/scp-mdmcomponent': {
-      //   target: 'http://172.16.10.33:8182/', // （主数据管理-人员管理）
-      //   changeOrigin: true
-      // },
-      '/scp-mdmapp': {
-        // target: 'http://192.168.0.242:30940/',
-        // target: 'http://192.168.0.161:30940/',
-        target: 'http://172.16.10.77:8182/', // (主数据管理：房屋管理、组织管理)
-        changeOrigin: true
-      },
-      '/scp-broadcastapp': {
-        target: 'http://192.168.0.242:30940/', // (个性化广播)
-        // target: 'http://172.16.10.28:8082/',
-        // target: 'http://192.168.0.161:30940/', //
-        changeOrigin: true
-      },
-      '/zuul/scp-broadcastapp': {
-        target: 'http://192.168.0.242:30940/', // 音频上传 蔡洽渠(个性化广播)
-        // target: 'http://192.168.0.161:30940/',
-        // target: 'http://172.16.10.28:8082/',
         changeOrigin: true
       },
       '/scp-parkinglotapp': {
@@ -81,13 +46,7 @@ module.exports = {
     autoOpenBrowser: true,
     errorOverlay: true,
     notifyOnErrors: true,
-    poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
-    // Use Eslint Loader?
-    // If true, your code will be linted during bundling and
-    // linting errors and warings will be shown in the console.
-    useEslint: true,
-    // If true, eslint errors and warings will also be shown in the error overlay
-    // in the browser.
+    poll: false, 
     showEslintErrorsInOverlay: false,
 
     /**
